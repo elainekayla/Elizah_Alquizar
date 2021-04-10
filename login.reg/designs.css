@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Heebo';
+}
+section{
+    
+    height:100% ;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(-45deg, #001858,#8bd3dd, #f3d2c1,#f582ae);
+    background-size: 400% 400%;
+   position: relative;
+   animation: change 9s ease-in-out infinite;
+}
+.form_box{
+    width: 380px;
+    height:550px;
+    position:absolute;
+    margin:  6% auto;
+    background: #fef6e4;
+    right: 39%;
+    padding: 5px;
+    box-shadow: 2px 3px 2px 1px #001858 ;
+    border-radius: 50px;
+    overflow:hidden ;
+    
+}
+.button_box{
+    width: 220px;
+    margin:35px auto;
+    position:relative;
+    box-shadow: 2px 2px 2px 1px black ;
+    border-radius: 30px;
+}
+.toggle_btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline:none;
+    position: relative;
+    font-size: 15px;
+}
+#btn{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #ff8ba7;
+    border-radius: 30px;
+    transition: .5s;
+}
+.fb_icon{
+    width: 50px auto;
+    text-align: center;
+}
+.fb_icon img{
+    width: 50px;
+    margin: -20px 12px;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+.input_group{
+top: 50px;
+padding: 4%;
+position: absolute;
+width: 250px;
+transition: .5s;
+
+}
+
+.input_field{
+width: 100%;
+padding:10px 0;
+margin: 5px 0;
+border-left: 0;
+border-top: 0;
+border-right: 0;
+border-bottom: 1px solid #001858;
+outline:none;
+background: transparent;    
+font-size: 15px;
+
+}
+.submit_btn{
+    width: 100px;
+    padding: 10px 30px;
+    cursor:pointer;
+    display: block;
+    margin: auto;
+    background: #ff8ba7;
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 14px;
+    
+}
+.check_box{
+margin: 30px 10px 30px 0;
+}
+ span{
+     color: #001858;
+     font-size: 15px;
+     bottom: 79px;
+     position: absolute;
+ }   
+ #login{
+     left: 50px;
+     top: 150px;
+ }
+ #register{
+    left: 450px; 
+    top: 100px;
+ }
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
